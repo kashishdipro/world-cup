@@ -1,0 +1,123 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/*-----------
+ Common Style 
+ ------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header, main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*-----------
+ Banner Style
+ -----------*/
+.banner-container{
+    background-color: #161616;
+    border-radius: 30px;
+    width: 1321px;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.banner-info{
+    margin: 111px 24px 111px 106px;
+}
+.banner-info h3{ 
+    font-weight: 700;
+    font-size: 70px;
+    margin: 0;
+    color: #FFFFFF;
+}
+.banner-info p{ 
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 0 0 0;
+    color: #FFFFFF;
+}
+.banner-info button{ 
+    font-weight: 400;
+    font-size: 20px;
+    margin: 30px 0 0 0;
+    padding: 10px;
+    background-color: #DD0000;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+.banner-info button:hover{
+    background-color: #FFFFFF;
+    color: #DD0000;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: .5fr 3fr;
+}
+.blogs-container{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.nav-container{
+    background-color: #161616;
+    border-radius: 10px;
+    width: 312px;
+}
+.btn {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 252px;
+    height: 64px;
+    margin: 30px;
+}
+.btn a{
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    color: #161616;
+}
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.blog{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 312px;
+    height: 362px;
+    margin-left: 20px;
+}
+.details a{
+    text-decoration: none;
+    border-radius: 1px solid;
+}
+footer{
+    right: 0;
+    left: 0;
+    background-color: #161616;
+    width: 100%;
+    height: 444px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h4{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 40px;
+}
+hr{
+    width: 1320px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-nav{
+    margin-top: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 20px;
+}
