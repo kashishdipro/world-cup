@@ -183,7 +183,7 @@ footer a{
 /* ------------
    Media Queies
    ------------ */
-
+/* Mobile View */
 @media screen and (max-width: 688px) {
     .banner-container{
         background-color: #161616;
@@ -240,5 +240,93 @@ footer a{
     }
     .btn{
         border: 1px solid #e8e8e8;
+    }
+    .footer-nav{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .footer-nav a{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icon{
+        margin-top: 20px;
+    }
+}
+/* Tab View */
+@media screen and (min-width: 688px) and (max-width: 992px) {
+    .banner-container{
+        background-color: #161616;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .banner, .blogs, .matches{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .banner-info{
+        margin: 61px 2px 61px 78px;
+    }
+    .banner-info h3{ 
+        font-weight: 700;
+        font-size: 40px;
+        margin-top: 28px;
+        color: #FFFFFF;
+    }
+    .banner-info p{ 
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 8px;
+        color: #FFFFFF;
+    }
+    .banner-info a{ 
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 16px;
+        padding: 10px;
+        background-color: #DD0000;
+        color: #FFFFFF;
+        border-radius: 5px;
+    }
+    .banner-info a:hover{
+        background-color: #FFFFFF;
+        color: #DD0000;
+    }
+    .banner-img{
+        margin: 0;
+    }
+    main{
+        margin-top: 20px;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+    }
+    .nav-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: #FFFFFF;
+        width: 700px;
+        height: 100px;
+    }
+    .btn{
+        width: 230px;
+        border: 1px solid #e8e8e8;
+        margin: 5px;
+    }
+    .btn.red{
+        width: 230px;
+        margin: 5px;
+    }
+    .footer-nav{
+        text-align: center;
     }
 }
