@@ -12,6 +12,9 @@ header, main{
     flex-direction: column;
     align-items: center;
 }
+main{
+    margin-top: 130px;
+}
 /*-----------
  Banner Style
  -----------*/
@@ -39,39 +42,57 @@ header, main{
     margin: 20px 0 0 0;
     color: #FFFFFF;
 }
-.banner-info button{ 
+.banner-info a{ 
+    display: flex;
+    width: 187px;
+    height: 56px;
+    align-items: center;
     font-weight: 400;
     font-size: 20px;
     margin: 30px 0 0 0;
-    padding: 10px;
     background-color: #DD0000;
-    color: #FFFFFF;
     border-radius: 5px;
+    gap: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
 }
-.banner-info button:hover{
+.banner-info a:hover{
     background-color: #FFFFFF;
     color: #DD0000;
 }
-
+.banner-img{
+    margin-top: 111px;
+}
+/*----------------
+  Navigation Style
+  ----------------*/
 .container{
+    row-gap: 20px;
     display: grid;
     grid-template-columns: .5fr 3fr;
 }
-.blogs-container{
-    margin-top: 30px;
-    margin-left: 20px;
+nav{
+    display: flex;
 }
 .nav-container{
     background-color: #161616;
     border-radius: 10px;
     width: 312px;
+    height: 312px;
 }
 .btn {
+    text-align: center;
     background-color: #FFFFFF;
     border-radius: 10px;
     width: 252px;
     height: 64px;
     margin: 30px;
+}
+.btn.red{
+    background-color: #DD0000;
+}
+.btn.red a{
+    color: #FFFFFF;
 }
 .btn a{
     font-weight: 500;
@@ -79,21 +100,54 @@ header, main{
     text-decoration: none;
     color: #161616;
 }
-.blogs {
+/*-----------------------
+  Blogs and Matches Style
+  -----------------------*/
+.blogs, .matches {
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
 .blog{
     background-color: #FFFFFF;
+    border: 1px solid #e8e8e8;
     border-radius: 10px;
     width: 312px;
     height: 362px;
     margin-left: 20px;
+    margin-bottom: 20px;
+}
+.match{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    width: 312px;
+    height: 242px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.details{
+    margin-left: 10px;
+    margin-top: 10px;
 }
 .details a{
+    color: #161616;
     text-decoration: none;
-    border-radius: 1px solid;
+    border-radius: 5px;
+    border: 1px solid;
 }
+.info{
+    margin-left: 10px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+/* ------------
+   Footer Style
+   ------------ */
 footer{
     right: 0;
     left: 0;
@@ -120,4 +174,71 @@ footer a{
     text-decoration: none;
     color: #FFFFFF;
     padding: 20px;
+}
+.social-icon{
+    margin-top: 70px;
+    font-size: 40px;
+}
+
+/* ------------
+   Media Queies
+   ------------ */
+
+@media screen and (max-width: 688px) {
+    .banner-container{
+        background-color: #161616;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .banner, .container, .blogs, .matches{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .banner-info{
+        margin: 0;
+    }
+    .banner-info h3{ 
+        font-weight: 700;
+        font-size: 22px;
+        margin-top: 28px;
+        color: #FFFFFF;
+    }
+    .banner-info p{ 
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 8px;
+        color: #FFFFFF;
+    }
+    .banner-info a{ 
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 16px;
+        padding: 10px;
+        background-color: #DD0000;
+        color: #FFFFFF;
+        border-radius: 5px;
+    }
+    .banner-info a:hover{
+        background-color: #FFFFFF;
+        color: #DD0000;
+    }
+    .banner-img{
+        margin: 0;
+    }
+    main{
+        margin-top: 20px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-container{
+        background-color: #FFFFFF;
+    }
+    .btn{
+        border: 1px solid #e8e8e8;
+    }
 }
